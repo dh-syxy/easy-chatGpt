@@ -1,0 +1,29 @@
+# 依赖与构建
+node_modules/
+frontend/dist/
+frontend/node_modules/
+backend/.venv/
+backend/venv/
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/.mypy_cache/
+
+# 环境与密钥
+.env
+.env.local
+
+# 本地文档（不上传）
+design-application.md
+readme.md
+README.md
+
+# 本地数据库
+backend/data/
+*.db
+
+# 系统与 IDE
+.DS_Store
+.idea/
+.vscode/
+*.log
