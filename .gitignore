@@ -13,10 +13,8 @@ backend/venv/
 .env
 .env.local
 
-# 本地文档（不上传）
+# 本地设计文档（不上传）
 design-application.md
-readme.md
-README.md
 
 # 本地数据库
 backend/data/

@@ -17,7 +17,7 @@ from sqlalchemy.orm import selectinload
 from app.config import Settings, get_settings
 from app.db import AsyncSessionLocal
 from app.models import Message, Session
-from app.services.openai_client import OpenAIClientError, stream_chat_completion
+from app.services.openai_client import OpenAIClientError, stream_model_reply
 
 
 def _utcnow() -> datetime:
@@ -136,7 +136,7 @@ async def stream_assistant_reply(
     finished_ok = False
 
     try:
-        async for delta in stream_chat_completion(
+        async for delta in stream_model_reply(
             settings,
             model=use_model,
             messages=context,
